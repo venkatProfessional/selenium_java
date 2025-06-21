@@ -15,6 +15,15 @@ public class Customer {
 
 		RBI myrbi = new Axis();
 		myrbi.aadharMandatory();
+//		 we care not able to call a bikeloan which is in rbi interface
+//		 we are not able to create a class
+		
+//		it is called by calss but not able to access the bikeloan in rbi interface
+//		myrbi.bikeloan();
+		
+//		it is called by  static
+//	interface can be used by static method
+		RBI.bikeloan();
 		
 		
 
