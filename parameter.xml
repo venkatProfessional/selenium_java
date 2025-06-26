@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+<parameter name="username" value="Admin"></parameter>
+<parameter name="password" value="admin123"></parameter>
+  <test thread-count="5" name="Chrometest">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="testTestNG.Parameter_annotation"/>
+    </classes>
+  </test> <!-- Test -->
+    <test thread-count="5" name="firefoxtest">
+      <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="testTestNG.Parameter_annotation"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+ <!-- threadcount -->
+<!-- This attribute defines how many threads (i.e., how many tests can run in parallel) inside that <test> tag. -->

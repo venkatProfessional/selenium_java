@@ -25,8 +25,6 @@ public class Selenium_interview_1 {
 		List<WebElement> cricketwords = driver.findElements(By.xpath("//*[contains(text(),'cricket') or contains(text(),'Cricket')]"));
 		
 		System.out.println(cricketwords.size());
-		
-		
 
 		
 //		for (WebElement cricketcount : cricketwords) {
